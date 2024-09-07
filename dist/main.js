@@ -16,7 +16,18 @@
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n    value: true\n}));\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\n__webpack_require__(/*! ../../../styles.css */ \"./styles.css\");\n\nvar _App = __webpack_require__(/*! ./App.scss */ \"./src/components/App/App.scss\");\n\nvar _App2 = _interopRequireDefault(_App);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar App = function App() {\n    return _react2.default.createElement(\n        'div',\n        null,\n        'Test APP',\n        _react2.default.createElement(\n            'div',\n            { className: _App2.default.test },\n            'test sass'\n        )\n    );\n};\nexports[\"default\"] = App;\n\n//# sourceURL=webpack://mui-autocomplete-react-16-webpack-module/./src/components/App/App.jsx?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n    value: true\n}));\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\n__webpack_require__(/*! ../../../styles.css */ \"./styles.css\");\n\n__webpack_require__(/*! ./App.scss */ \"./src/components/App/App.scss\");\n\nvar _Foo = __webpack_require__(/*! ../foo/Foo */ \"./src/components/foo/Foo.jsx\");\n\nvar _Foo2 = _interopRequireDefault(_Foo);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar App = function App() {\n    return _react2.default.createElement(\n        'div',\n        null,\n        'Test APP',\n        _react2.default.createElement(\n            'div',\n            { className: 'test' },\n            'test sass'\n        ),\n        _react2.default.createElement(_Foo2.default, null)\n    );\n};\nexports[\"default\"] = App;\n\n//# sourceURL=webpack://mui-autocomplete-react-16-webpack-module/./src/components/App/App.jsx?");
+
+/***/ }),
+
+/***/ "./src/components/foo/Foo.jsx":
+/*!************************************!*\
+  !*** ./src/components/foo/Foo.jsx ***!
+  \************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n    value: true\n}));\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\n__webpack_require__(/*! ./Foo.scss */ \"./src/components/foo/Foo.scss\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Foo = function Foo() {\n    return _react2.default.createElement(\n        \"div\",\n        { className: \"foo\" },\n        \"Foo\"\n    );\n};\nexports[\"default\"] = Foo;\n\n//# sourceURL=webpack://mui-autocomplete-react-16-webpack-module/./src/components/foo/Foo.jsx?");
 
 /***/ }),
 
@@ -38,6 +49,16 @@ eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/i
 /***/ ((module, exports, __webpack_require__) => {
 
 eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.id, \".test {\\n  background: red;\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack://mui-autocomplete-react-16-webpack-module/./src/components/App/App.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/foo/Foo.scss":
+/*!******************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/foo/Foo.scss ***!
+  \******************************************************************************************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.id, \".foo {\\n  background: blue;\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack://mui-autocomplete-react-16-webpack-module/./src/components/foo/Foo.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -200,6 +221,16 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var api = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./App.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/App/App.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.id, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack://mui-autocomplete-react-16-webpack-module/./src/components/App/App.scss?");
+
+/***/ }),
+
+/***/ "./src/components/foo/Foo.scss":
+/*!*************************************!*\
+  !*** ./src/components/foo/Foo.scss ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var api = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./Foo.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/foo/Foo.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.id, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack://mui-autocomplete-react-16-webpack-module/./src/components/foo/Foo.scss?");
 
 /***/ }),
 
