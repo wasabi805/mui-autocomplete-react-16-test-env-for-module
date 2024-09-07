@@ -46,7 +46,9 @@
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.9.1",
     "html-webpack-plugin": "^5.6.0",
-    "require": "^2.4.20"
+    "require": "^2.4.20",
+    "sass": "^1.78.0",
+    "sass-loader": "^16.0.1"
   },
   "homepage": "https://github.com/wasabi805/mui-autocomplete-react-16-webpack-module#readme"
 }
